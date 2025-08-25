@@ -1,0 +1,314 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-demoqa;valid-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Valid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1089965625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the DemoQA login page",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3115527833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter username \"testUser\" and password \"Pass123*-\"",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78021834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107604542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the user profile page",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2302318750
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 170792458
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-demoqa;invalid-login",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Invalid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 538858624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the DemoQA login page",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3533673334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter username \"invalid\" and password \"invalid\"",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60519583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the login button",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36313333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message",
+            "match": {
+              "location": "tests/steps-definitions/login.steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1286747124
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 160037167
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-demoqa",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login to DemoQA",
+    "tags": [],
+    "uri": "tests/features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "buscar-libros;buscar-libro-existente",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Buscar libro existente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 506851291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the DemoQA books page",
+            "match": {
+              "location": "tests/steps-definitions/search.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3571390709
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for the book \"Git Pocket Guide\"",
+            "match": {
+              "location": "tests/steps-definitions/search.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13638915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see \"Git Pocket Guide\" in the results",
+            "match": {
+              "location": "tests/steps-definitions/search.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4876167
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151570707
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "buscar-libros;buscar-libro-not-existente",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Buscar libro not existente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 413835541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the DemoQA books page",
+            "match": {
+              "location": "tests/steps-definitions/search.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4272237000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I search for the book \"Titulo No Existente\"",
+            "match": {
+              "location": "tests/steps-definitions/search.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17154916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see no books in the results",
+            "match": {
+              "location": "tests/steps-definitions/search.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5290499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 162589083
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "buscar-libros",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Buscar libros",
+    "tags": [],
+    "uri": "tests/features/search.feature"
+  }
+]
